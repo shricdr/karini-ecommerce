@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import { connectDB } from "./core/database/database";
 
 dotenv.config();
 
@@ -12,4 +13,5 @@ app.get("/ping", (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
+  connectDB();
 });
