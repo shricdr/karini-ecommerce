@@ -64,7 +64,7 @@ const InfiniteProductList: React.FC<InfiniteProductListProps> = ({
   useEffect(() => {
     console.log("apiItems", apiItems);
     // let f = 0;
-    if ((chatTerm !== "" || searchTerm !== "") && apiItems) {
+    if ((chatTerm !== "" || searchTerm !== "") && apiItems?.length) {
       setFlag(true);
       // f = 1;
       setItems(apiItems);

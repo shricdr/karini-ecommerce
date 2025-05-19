@@ -86,9 +86,7 @@ const MenuBar: React.FC<MenuBarProps> = ({
 
   useEffect(() => {
     let totalQuantity = 0;
-    console.log(items);
     if (items.length) items.map((i) => (totalQuantity += i.quantity));
-    console.log("totalQuantity", totalQuantity);
     setQuantity(totalQuantity);
   }, [items]);
 

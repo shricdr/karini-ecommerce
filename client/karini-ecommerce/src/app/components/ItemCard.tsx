@@ -125,10 +125,6 @@ const ItemCard: React.FC<ItemCardProps> = ({ item, onAddToCart }) => {
           </Typography>
         </Box>
       </CardContent>
-      {/* <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions> */}
 
       {/* Hover Content */}
       <Box
